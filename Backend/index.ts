@@ -89,7 +89,6 @@ app.put("/funcionario/:cod", (req: Request, res: Response) => {
 
 // Método DELETE para remover um funcionário pelo código
 app.delete("/funcionario/:cod", (req: Request, res: Response) => {
-  /*
   db.query(
     "DELETE FROM funcionario WHERE cod = ?",
     [req.params.cod],
@@ -98,8 +97,6 @@ app.delete("/funcionario/:cod", (req: Request, res: Response) => {
       res.send("Funcionário deletado!");
     }
   );
-  */
-  res.status(500).send("Funcionário")
 });
 
 // Iniciar o servidor
